@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sugumar Logistics Imports and Exports</title>
+  <style>
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: url('images/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: black;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Hamburger menu container */
+    .menu-container {
+      position: fixed;
+      top: 60px;
+      left: 20px;
+      z-index: 1000;
+    }
+
+    /* Hamburger icon */
+    .hamburger {
+      width: 30px;
+      height: 22px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .hamburger span {
+      display: block;
+      height: 4px;
+      background-color: black;
+      border-radius: 2px;
+    }
+
+    /* Dropdown menu */
+    .dropdown {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background: white;
+      border: 1px solid black;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      display: none;
+      width: 220px;
+      font-weight: bold;
+    }
+
+    .dropdown.show {
+      display: block;
+    }
+
+    .dropdown-item {
+      border-bottom: 1px solid #ddd;
+      padding: 15px 20px;
+      cursor: default;
+      line-height: 1.4;
+      word-wrap: break-word;      /* breaks long words like email addresses */
+      white-space: normal;        /* allows wrapping */
+      max-width: 100%;            /* ensure it doesn’t overflow its parent */
+    }
+
+    .dropdown {
+      width: 260px; /* or larger if needed */
+    }
+
+    .dropdown-item:last-child {
+      border-bottom: none;
+    }
+
+.welcome-message {
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;      /* smaller font */
+  padding: 8px 0;         /* smaller vertical padding */
+  width: 100vw;           /* full viewport width */
+  margin: 0;              /* remove auto margins */
+  border-radius: 0;       /* no rounded corners */
+  text-align: center;
+  user-select: none;
+  box-shadow: none;       /* remove shadow for cleaner full width */
+  position: fixed;        /* optional: keep it visible on top */
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+body {
+  padding-top: 35px;      /* add top padding to prevent overlap with fixed welcome */
+}
+
+    /* Title */
+  .title {
+  background-color: #8B5A2B;  /* dark background */
+  color: white;                         /* white text */
+  border: 2px solid #444;               /* subtle border */
+  padding: 15px 30px;                   /* comfortable padding */
+  text-align: center;
+  max-width: 400px;                     /* smaller width */
+  margin: 100px auto 30px;              /* moved down with margin */
+  border-radius: 15px;                  /* rounded corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); /* stronger shadow */
+  font-size: 1.6rem;                   /* smaller font size */
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 3px;
+  user-select: none;
+}
+
+
+    /* Center container for blocks */
+    .center-container {
+      flex-grow: 1;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      max-width: 900px;
+      margin: 0 auto 60px;
+      padding: 0 20px;
+      text-align: center;
+      align-items: start; /* Prevent row stretching */
+    }
+
+    /* Each block styling */
+.block {
+  border: 2px solid black; /* Wood-toned brown border */
+  border-radius: 12px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+    .block:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .block img {
+      max-width: 100%;
+      height: 140px;
+      object-fit: contain;
+      margin-bottom: 12px;
+      border-radius: 8px;
+    }
+
+    .block-name {
+      font-weight: 700;
+      font-size: 18px;
+      color: black;
+    }
+
+    /* Info inside each block */
+    .block-info {
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      border-radius: 0 0 10px 10px;
+      padding: 15px 20px;
+      box-sizing: border-box;
+      color: #333;
+      font-size: 14px;
+      text-align: left;
+      display: none; /* hidden by default */
+      max-height: 300px;
+      overflow-y: auto; /* scroll if content too tall */
+      margin-top: 10px;
+    }
+
+    /* Responsive adjustments */
+    @media(max-width: 480px) {
+      .center-container {
+        margin-top: 120px;
+        gap: 30px;
+      }
+      .title {
+        font-size: 2.2rem;
+        margin: 0 auto 30px;
+      }
+      .welcome-message {
+        font-size: 1.4rem;
+        margin: 30px auto 15px;
+        padding: 12px 20px;
+      }
+    }
+
+.info-section {
+  background-color: black;
+  color: white;
+  width: 100vw;           /* full viewport width */
+  padding: 20px 40px;     /* some padding left/right */
+  box-sizing: border-box; /* include padding in width */
+  border-radius: 0;       /* remove rounded corners for full width */
+  box-shadow: none;       /* optional: remove shadow if you want clean edges */
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  margin-top: auto;
+  
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Hamburger menu -->
+  <div class="menu-container">
+    <div class="hamburger" id="hamburger" aria-label="Menu" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="dropdown" id="dropdownMenu" role="menu" aria-hidden="true">
+      <div class="dropdown-item">Need Help / Info</div>
+      <div class="dropdown-item">Imports (others to India)</div>
+      <div class="dropdown-item">Exports (India to others)</div>
+      <div class="dropdown-item"><a href="tel:+916281854451">Contact: +91 6281854451</a></div>
+      <div class="dropdown-item"><a href="mailto:lalithsugumar10@gmail.com">Mail: lalithsugumar10@gmail.com</a></div>
+    </div>
+  </div>
+
+  <!-- Top Welcome Message -->
+  <div class="welcome-message" role="region" aria-label="Welcome message">
+    Hi, Welcome
+  </div>
+
+  <!-- Title -->
+  <h1 class="title">VSDK LOGISTICS</h1>
+
+  <!-- Center page blocks -->
+  <main class="center-container">
+    <div class="block" role="button" tabindex="0" aria-label="Air Cargo">
+      <img src="images/air-cargo.jfif" alt="Aeroplane - Air Cargo" />
+      <div class="block-name">Air Cargo</div>
+      <div class="block-info">
+       <p><strong>Booking & Documentation:</strong> Shippers book space with an airline or freight forwarder and prepare necessary paperwork (e.g., air waybill).</p>
+       <p><strong>Pickup & Consolidation:</strong> Cargo is picked up, packed, and often consolidated with other shipments.</p>
+       <p><strong>Airport Handling:</strong> Goods are screened, weighed, and stored in secure cargo terminals.</p>
+       <p><strong>Air Transport:</strong> Cargo is loaded onto aircraft and flown to the destination airport.</p>
+       <p><strong>Arrival & Delivery:</strong> After customs clearance, goods are delivered to the consignee.</p>
+      </div>
+    </div>
+
+    <div class="block" role="button" tabindex="0" aria-label="Sea Cargo">
+      <img src="images/sea-cargo.png" alt="Big Ship - Sea Cargo" />
+      <div class="block-name">Sea Cargo</div>
+      <div class="block-info">
+        <p>Sea Cargo info goes here. You can update with real info as needed.</p>
+      </div>
+    </div>
+
+    <div class="block" role="button" tabindex="0" aria-label="Warehouse Management">
+      <img src="images/warehousewarehouse.jpg" alt="Storage Room with Brown Boxes - Warehouse Management" />
+      <div class="block-name">Warehouse Management</div>
+      <div class="block-info">
+        <p>Warehouse management details can be added here.</p>
+      </div>
+    </div>
+
+    <div class="block" role="button" tabindex="0" aria-label="To Your Doorstep">
+      <img src="images/doorstep.png" alt="Delivery Boy - To Your Doorstep" />
+      <div class="block-name">To Your Doorstep</div>
+      <div class="block-info">
+        <p>Delivery info and details for doorstep services.</p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Toggle dropdown menu on hamburger click
+    const hamburger = document.getElementById('hamburger');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    hamburger.addEventListener('click', () => {
+      const isShown = dropdownMenu.classList.toggle('show');
+      dropdownMenu.setAttribute('aria-hidden', !isShown);
+    });
+
+    // Optional: close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!hamburger.contains(e.target) && !dropdownMenu.contains(e.target)) {
+        dropdownMenu.classList.remove('show');
+        dropdownMenu.setAttribute('aria-hidden', 'true');
+      }
+    });
+
+    // Accessibility: toggle dropdown on Enter/Space key on hamburger
+    hamburger.addEventListener('keydown', (e) => {
+      if(e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        hamburger.click();
+      }
+    });
+
+    // Generic toggle for each block's info on click (only if click NOT inside .block-info)
+    const blocks = document.querySelectorAll('.block');
+    blocks.forEach(block => {
+      block.addEventListener('click', (e) => {
+        if (e.target.closest('.block-info')) return; // ignore clicks inside info content
+
+        const info = block.querySelector('.block-info');
+        if (info) {
+          info.style.display = info.style.display === 'block' ? 'none' : 'block';
+        }
+      });
+
+      // Optional: toggle with keyboard (Enter or Space)
+      block.addEventListener('keydown', (e) => {
+        if(e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          const info = block.querySelector('.block-info');
+          if (info) {
+            info.style.display = info.style.display === 'block' ? 'none' : 'block';
+          }
+        }
+      });
+    });
+  </script>
+
+<section class="info-section" role="region" aria-label="Additional Information">
+  <p>Imports and exports are key components of international trade.</p>
+  <p>Imports are goods and services brought into a country from abroad.</p>
+  <p>Exports are goods and services sold to other countries.</p>
+  <p>Countries import items they cannot produce efficiently.</p>
+  <p>Exports help nations earn foreign exchange and boost their economy.</p>
+  <p>Balanced trade between imports and exports supports economic stability..</p>
+  <p>Governments often regulate imports and exports to protect local industries.</p>
+</section>
+
+
+</body>
+</html>
