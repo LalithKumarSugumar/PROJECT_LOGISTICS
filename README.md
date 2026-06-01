@@ -12,7 +12,7 @@
 - 💻 Passionate Software Developer
 - 🌱 Learning Advanced Data Structures & System Design
 - 🔭 Working on Full Stack Development Projects
-- 📫 Reach me at: **your-email@example.com**
+- 📫 Reach me at: **lalithkumarsugumar@gmail.com**
 - ⚡ Fun fact: I enjoy solving coding challenges
 
 ---
@@ -21,27 +21,27 @@
 
 ### 💻 Programming Languages
 <p>
-  <img src="https://skillicons.dev/icons?i=c,cpp,cs,python,js" />
+  <img src="https://skillicons.dev/icons?i=c,cpp,python" />
 </p>
 
 ### 🌐 Frontend Development
 <p>
-  <img src="https://skillicons.dev/icons?i=html,css,react,angular,figma" />
+  <img src="https://skillicons.dev/icons?i=html,css,xml,figma" />
 </p>
 
 ### ⚙️ Backend & Frameworks
 <p>
-  <img src="https://skillicons.dev/icons?i=django,express,nodejs,qt" />
+  <img src="https://skillicons.dev/icons?i=qt" />
 </p>
 
 ### 🗄️ Databases
 <p>
-  <img src="https://skillicons.dev/icons?i=mysql,mongodb,postgres" />
+  <img src="https://skillicons.dev/icons?i=mysql" />
 </p>
 
 ### 🛠️ Tools & DevOps
 <p>
-  <img src="https://skillicons.dev/icons?i=postman,linux,matlab,arduino" />
+  <img src="https://skillicons.dev/icons?i=linux,arduino" />
 </p>
 
 ### 🤖 Machine Learning & Data Science
