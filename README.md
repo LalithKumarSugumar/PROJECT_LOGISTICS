@@ -65,5 +65,5 @@ A logistics management system developed using modern web technologies.
 
 ### 📫 Connect With Me
 
-- LinkedIn: [Your LinkedIn URL](https://www.linkedin.com/in/lalithksugumar/)
+- LinkedIn: [linkedin_Lalith](https://www.linkedin.com/in/lalithksugumar/)
 - GitHub: https://github.com/LalithKumarSugumar
