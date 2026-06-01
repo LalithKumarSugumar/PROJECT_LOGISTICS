@@ -26,7 +26,7 @@
 
 ### 🌐 Frontend Development
 <p>
-  <img src="https://skillicons.dev/icons?i=html,css,xml,figma" />
+  <img src="https://skillicons.dev/icons?i=html,css,figma" />
 </p>
 
 ### ⚙️ Backend & Frameworks
@@ -51,18 +51,6 @@
 
 ---
 
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=LalithKumarSugumar&show_icons=true&theme=tokyonight" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=LalithKumarSugumar&theme=tokyonight" />
-</p>
-
----
-
 ## 🌟 Featured Project
 
 ### 🚚 PROJECT_LOGISTICS
@@ -77,5 +65,5 @@ A logistics management system developed using modern web technologies.
 
 ### 📫 Connect With Me
 
-- LinkedIn: Your LinkedIn URL
+- LinkedIn: [Your LinkedIn URL](https://www.linkedin.com/in/lalithksugumar/)
 - GitHub: https://github.com/LalithKumarSugumar
