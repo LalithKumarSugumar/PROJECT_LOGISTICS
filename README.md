@@ -22,12 +22,6 @@
 ### 💻 Programming Languages
 <img src="https://skillicons.dev/icons?i=cpp,python,c" />
 
-### 📐 Mechanical Modeling & Computer-Aided Design (CAD)
-<img src="https://shields.io" alt="Siemens NX" height="40" /> <img src="https://shields.io" alt="CAD Frameworks" height="40" />
-
-### 🌐 Frontend Web Development & Interface Design
-<img src="https://shields.io" alt="Frontend & UI Design" height="40" />
-
 ### 🌐 Frontend Development & Design
 <img src="https://skillicons.dev/icons?i=html,css,figma" />
 
