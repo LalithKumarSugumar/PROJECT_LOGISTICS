@@ -2,7 +2,7 @@
 <h3 align="center">Software Developer | Full Stack Developer | Problem Solver</h3>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=LalithKumarSugumar&label=Profile%20Views&color=0e75b6&style=flat" alt="profile views" />
+  <img src="https://komarev.com" alt="profile views" />
 </p>
 
 ---
@@ -21,32 +21,32 @@
 
 ### 💻 Programming Languages
 <p>
-  <img src="https://skillicons.dev/icons?i=c,cpp,python" />
+  <img src="https://skillicons.dev" />
 </p>
 
 ### 🌐 Frontend Development
 <p>
-  <img src="https://skillicons.dev/icons?i=html,css,figma" />
+  <img src="https://skillicons.dev" />
 </p>
 
 ### ⚙️ Backend & Frameworks
 <p>
-  <img src="https://skillicons.dev/icons?i=qt" />
+  <img src="https://skillicons.dev" />
 </p>
 
 ### 🗄️ Databases
 <p>
-  <img src="https://skillicons.dev/icons?i=mysql" />
+  <img src="https://skillicons.dev" />
 </p>
 
 ### 🛠️ Tools & DevOps
 <p>
-  <img src="https://skillicons.dev/icons?i=linux,arduino" />
+  <img src="https://skillicons.dev" />
 </p>
 
 ### 🤖 Machine Learning & Data Science
 <p>
-  <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn" />
+  <img src="https://skillicons.dev" />
 </p>
 
 ---
@@ -65,5 +65,5 @@ A logistics management system developed using modern web technologies.
 
 ### 📫 Connect With Me
 
-- LinkedIn: [linkedin_Lalith](https://www.linkedin.com/in/lalithksugumar/)
-- GitHub: https://github.com/LalithKumarSugumar
+- LinkedIn: [linkedin_Lalith](https://linkedin.com)
+- GitHub: https://github.com
