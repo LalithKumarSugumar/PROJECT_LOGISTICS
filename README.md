@@ -20,34 +20,28 @@
 ## ⚡ Languages, Tools, and Technologies
 
 ### 💻 Programming Languages
-<p>
-  <img src="https://skillicons.dev/icons?i=c,cpp,python" />
-</p>
+<img src="https://skillicons.dev/icons?i=cpp,python,c" />
 
-### 🌐 Frontend Development
-<p>
-  <img src="https://skillicons.dev/icons?i=html,css,figma" />
-</p>
+### 📐 Mechanical Modeling & Computer-Aided Design (CAD)
+<img src="https://shields.io" alt="Siemens NX" /> <img src="https://shields.io" alt="CAD Frameworks" />
 
-### ⚙️ Backend & Frameworks
-<p>
-  <img src="https://skillicons.dev/icons?i=qt" />
-</p>
+### 🌐 Frontend Web Development & Interface Design
+<img src="https://skillicons.dev" alt="Frontend & UI Design" />
 
-### 🗄️ Databases
-<p>
-  <img src="https://skillicons.dev/icons?i=mysql" />
-</p>
+### 🌐 Frontend Development & Design
+<img src="https://skillicons.dev/icons?i=html,css,figma" />
 
-### 🛠️ Tools & DevOps
-<p>
-  <img src="https://skillicons.dev/icons?i=linux,arduino" />
-</p>
+### ⚙️ Backend, Frameworks & Desktop GUIs
+<img src="https://skillicons.dev/icons?i=qt" />
 
-### 🤖 Machine Learning & Data Science
-<p>
-  <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn" />
-</p>
+### 🗄️ Relational Database Management Systems (RDBMS)
+<img src="https://skillicons.dev/icons?i=mysql" />
+
+### 🛠️ Environment, Hardware & DevOps Tools
+<img src="https://skillicons.dev/icons?i=linux,arduino" />
+
+### 🤖 Machine Learning, Deep Learning & Data Science
+<img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn" />
 
 ---
 
