@@ -23,7 +23,10 @@
 <img src="https://skillicons.dev/icons?i=cpp,python,c" />
 
 ### 📐 Mechanical Modeling & Computer-Aided Design (CAD)
-<img src="https://shields.io" alt="Siemens NX" /> <img src="https://shields.io" alt="CAD Frameworks" />
+<p align="left">
+  <img src="https://shields.io" alt="Siemens NX" />
+  <img src="https://shields.io" alt="CAD Frameworks" />
+</p>
 
 ### 🌐 Frontend Web Development & Interface Design
 <img src="https://skillicons.dev" alt="Frontend & UI Design" />
